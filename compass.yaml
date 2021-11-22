@@ -1,6 +1,6 @@
 name: neatoComponent
 id: 'ari:cloud:compass:8c9fa094-58bf-4a52-a1c2-fb9d071fbcbd:component/b1765c71-52c9-4a98-a1a1-d3bdabd73178/7eb352fd-bd13-4b46-802a-e3467f2eff98'
-description: a very neato component!!!
+description: a very neato component
 ownerId: 'ari:cloud:teams::team/79484ca9-4c83-42ee-a201-db774a3b2dec'
 fields:
   tier: 1
