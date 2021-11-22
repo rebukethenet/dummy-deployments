@@ -3,7 +3,6 @@ on:
   push:
 jobs:
   Deploy-the-Thing:
-    needs: Test-the-Thing
     runs-on: ubuntu-latest
     environment: production
     steps:
