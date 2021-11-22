@@ -1,0 +1,20 @@
+name: Build, Test, and Deploy
+on:
+  push:
+jobs:
+  Deploy-the-Thing:
+    needs: Test-the-Thing
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Fake deploy to AWS
+        run: echo "yep, totallllly deploying to AWS right meow..."
+      - name: Send deployment event to Compass
+        run: echo "emitting a deployment event to the Compass activity feed!"
+        #uses: actions/atlassian-compass@v1
+        #with:
+        #  emit-event-type: deployment
+        #  emit-event-type-value: "kubernetes:aws:my-namespace"
+        #  emit-event-annotation: "${{ GITHUB_JOB }}:${{ GITHUB_REF }}:${{ GITHUB_SHA }}"
+        #  compass-api-key: ${{ secrets.COMPASS_API_KEY }} # maybe we allow updates without connecting Compass to an entire GitHub org
+        #  compass-yaml: "path/to/compass.yml" # infer it sits in the root dir by default
