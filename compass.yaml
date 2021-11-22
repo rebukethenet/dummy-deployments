@@ -1,0 +1,41 @@
+name: neatoComponent
+id: 'ari:cloud:compass:8c9fa094-58bf-4a52-a1c2-fb9d071fbcbd:component/b1765c71-52c9-4a98-a1a1-d3bdabd73178/7eb352fd-bd13-4b46-802a-e3467f2eff98'
+description: a very neato component!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ownerId: 'ari:cloud:teams::team/79484ca9-4c83-42ee-a201-db774a3b2dec'
+fields:
+  tier: 1
+links:
+  - name: null
+    type: PROJECT
+    url: 'https://jcampbell2.atlassian.net/browse/PTE'
+  - name: Runbook
+    type: DOCUMENT
+    url: 'https://username.atlassian.net/wiki/orderLookup'
+  - name: '#payments-team'
+    type: CHAT_CHANNEL
+    url: 'https://something.slack.com/'
+  - name: Architecture Diagrams
+    type: DOCUMENT
+    url: 'https://username.atlassian.net/wiki/orderLookup'
+  - name: Health Overview Dashboard
+    type: DASHBOARD
+    url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
+  - name: null
+    type: OTHER_LINK
+    url: 'https://petstore.swagger.io/v2/swagger.json'
+  - name: Error rates & latency
+    type: DASHBOARD
+    url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
+  - name: Source Code
+    type: REPOSITORY
+    url: 'https://github.com/rebukethenet/dummy'
+  - name: On-Call Rotation
+    type: ON_CALL
+    url: 'https://atlassian.app.opsgenie.com/teams/dashboard/e927f31b-71df-4413-9919-47b54a88ad56/main'
+relationships:
+  DEPENDS_ON:
+    - 'ari:cloud:compass:8c9fa094-58bf-4a52-a1c2-fb9d071fbcbd:component/b1765c71-52c9-4a98-a1a1-d3bdabd73178/44b9bb1e-cd6e-4ee9-8832-7cd93eefddda'
+    - 'ari:cloud:compass:8c9fa094-58bf-4a52-a1c2-fb9d071fbcbd:component/b1765c71-52c9-4a98-a1a1-d3bdabd73178/d2814970-4a67-432c-b0ed-e9e733c76532'
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-config-as-code
