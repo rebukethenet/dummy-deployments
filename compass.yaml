@@ -3,7 +3,8 @@ id: 'ari:cloud:compass:fecd0fb5-2b28-49b0-9302-e0c22ed55d54:component/56c9dcff-3
 description: Dummy repo.
 ownerId: null
 fields:
-  tier: 4
+  tier: 4gs
+  
 links:
   - name: Source Code
     type: REPOSITORY
