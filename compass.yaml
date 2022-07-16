@@ -1,10 +1,9 @@
 name: dummy-deployments
 id: 'ari:cloud:compass:fecd0fb5-2b28-49b0-9302-e0c22ed55d54:component/56c9dcff-3874-4a21-b16d-053c544f398d/a8a92b9c-244a-410d-97a0-750bc9cabac0'
-description: Dummy repo.
+description: Dummy Deployments! Fake deploys daily to make it look like things are happening.
 ownerId: null
 fields:
-  tier: 4gs
-  
+  tier: 1
 links:
   - name: Source Code
     type: REPOSITORY
