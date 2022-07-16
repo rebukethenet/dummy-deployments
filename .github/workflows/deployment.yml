@@ -1,6 +1,8 @@
 name: Build, Test, and Deploy
 on:
   push:
+  schedule:
+    - cron: "20 04 * * *"
 jobs:
   Deploy-the-Thing:
     runs-on: ubuntu-latest
