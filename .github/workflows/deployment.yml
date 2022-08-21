@@ -12,7 +12,7 @@ jobs:
   prod:
     needs: staging
     runs-on: ubuntu-latest
-    environment: prod-central
+    environment: production
     steps:
       - name: Fake deploy to prod
         run: echo "prod deployment complete..."
