@@ -1,15 +1,21 @@
 name: Build, Test, and Deploy
 on:
   push:
-  schedule:
-    - cron: "20 04 * * *"
+
 jobs:
-  Deploy-the-Thing:
+  staging:
     runs-on: ubuntu-latest
-    environment: production
+    environment: staging
     steps:
-      - name: Fake deploy to AWS
-        run: echo "yep, totallllly deploying to AWS right meow..."
+      - name: Fake deploy to staging
+        run: echo "staging deployment complete..."
+  prod:
+    needs: staging
+    runs-on: ubuntu-latest
+    environment: prod-central
+    steps:
+      - name: Fake deploy to prod
+        run: echo "prod deployment complete..."
       - name: Send deployment event to Compass
         run: echo "emitting a deployment event to the Compass activity feed!"
         #uses: actions/atlassian-compass@v1
