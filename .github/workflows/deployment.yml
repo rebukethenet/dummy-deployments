@@ -1,13 +1,15 @@
-name: Build, Test, and Deploy
+name: Build and deploy
 on:
   push:
-
+  schedule:
+    - cron: "6 20 * * *"
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Blah
-        run: echo  "Blah"
+        run: echo "Build successful!"
   staging:
     runs-on: ubuntu-latest
     environment: staging
